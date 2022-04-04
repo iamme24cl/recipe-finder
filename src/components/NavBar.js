@@ -53,7 +53,7 @@ const NavBar = () => {
           </svg>
         </button>
         <a className="text-xl text-black" href="#">
-          FOOD RECIPES
+          HEALTHY RECIPES
         </a>
         <div
           className="collapse navbar-collapse flex-grow items-center"
