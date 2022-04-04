@@ -2,7 +2,15 @@ import React from "react";
 
 const Header = () => {
   const handleClick = () => {
-    window.scrollTo(0, 1000);
+    if (
+      /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+        navigator.userAgent
+      )
+    ) {
+      window.scrollTo(0, 350);
+    } else {
+      window.scrollTo(0, 1000);
+    }
   };
 
   return (
